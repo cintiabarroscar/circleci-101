@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>No Instagram!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <style type="text/css">
+    article.box { padding: 0; border: none; box-shadow: none; }
+    .card-image { overflow: auto; }
+  </style>
+</head>
+<body>
+<section class="section">
+  <div class="container">
+    <h1 class="title">
+      No Instagram.
+    </h1>
+    {{ @tiles }}
+  </div>
+</section>
+<script>
+  (function(w, d){
+      var b = d.getElementsByTagName('body')[0];
+      var s = d.createElement("script");
+      var v = !("IntersectionObserver" in w) ? "8.17.0" : "10.20.0";
+      s.async = true; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+      s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";
+      w.lazyLoadOptions = {/* Your options here */};
+      b.appendChild(s);
+  }(window, document));
+</script>
+</body>
+</html>
+
